@@ -8,7 +8,7 @@ import MessageViewer from './components/MessageViewer/MessageViewer';
 import Sidebar from './components/Sidebar/Sidebar';
 import * as S from './style';
 
-import exampleChat from './assets/whatsapp-chat-parser-example.zip';
+// import exampleChat from './assets/whatsapp-chat-parser-example.zip';
 
 function App() {
   const messages = useAtomValue(messagesAtom);
@@ -53,10 +53,6 @@ function App() {
       <S.Container>
         <S.Header>
           <Dropzone onFileUpload={processFile} id="dropzone" />
-          <span>OR</span>
-          <a href={exampleChat} download>
-            Download example chat
-          </a>
         </S.Header>
         <MessageViewer />
         {messages.length > 0 && <Sidebar />}
