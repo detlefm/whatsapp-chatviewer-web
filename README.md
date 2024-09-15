@@ -26,6 +26,15 @@ It's also possible to download them directly from the [releases page](https://gi
 - [Android](https://faq.whatsapp.com/android/chats/how-to-save-your-chat-history)
 - [iPhone](https://faq.whatsapp.com/iphone/chats/how-to-back-up-to-icloud/)
 
+## How to run within docker
+
+``` bash
+# build docker image
+docker build -t whatsappviewer-nginx .
+# exposing external port
+docker run --name whatsappviewer-nginx -d -p 9090:80 --restart=always whatsappviewer-nginx
+```
+
 ## Technologies used
 
 - Language: [TypeScript](https://www.typescriptlang.org/)
