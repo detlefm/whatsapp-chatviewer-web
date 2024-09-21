@@ -1,5 +1,5 @@
 {
-  "name": "whatsapp-chat-parser-website",
+  "name": "whatsapp-chatviewer-web",
   "version": "1.10.0",
   "type": "module",
   "private": true,
@@ -14,8 +14,8 @@
     "react-dom": "18.3.1",
     "react-linkify": "1.0.0-alpha",
     "styled-components": "6.1.12",
-    "vite": "5.3.4",
-    "whatsapp-chat-parser": "4.0.0"
+    "vite": "^5.4.7",
+    "whatsapp-chat-parser": "4.0.2"
   },
   "scripts": {
     "start": "vite",
